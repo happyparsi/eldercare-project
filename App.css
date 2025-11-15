@@ -1,0 +1,340 @@
+/* Import the font we added (now it's global) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Main App Container: Light, warm background for calmness */
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f0 100%); /* Soft gray-blue gradient, like a calm sky */
+  min-height: 100vh;
+  color: #333333; /* Dark gray text for high contrast/readability */
+  font-family: 'Open Sans', sans-serif; /* Clean, elder-friendly font */
+  padding: 20px;
+  line-height: 1.6; /* More spacing between lines for easier reading */
+}
+
+/* Headings: Warm and prominent, no glows */
+h1 {
+  font-size: 2.5em; /* Slightly smaller but still big */
+  color: #4a5568; /* Soft slate gray */
+  margin-bottom: 20px;
+  font-weight: 600; /* Medium bold, not heavy */
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #2d3748; /* Deeper gray for hierarchy */
+  margin: 25px 0 15px 0;
+  font-weight: 600;
+}
+
+/* Paragraphs and Labels: Simple, larger text */
+p, label {
+  font-size: 1.1em; /* Bigger for elders */
+  color: #4a5568;
+  margin: 15px 0;
+  font-weight: 400; /* Light weight */
+}
+
+/* Inputs: Clean, subtle borders with light focus */
+input {
+  padding: 12px; /* More padding for easy tapping */
+  border: 2px solid #cbd5e0; /* Light gray border */
+  border-radius: 8px; /* Gentle rounds */
+  background: #ffffff; /* White bg for clarity */
+  color: #333333;
+  font-size: 1em;
+  margin: 8px;
+  width: 250px; /* Fixed width for consistency */
+  font-family: inherit; /* Matches app font */
+  transition: border-color 0.2s ease; /* Smooth, subtle change */
+}
+
+input:focus {
+  outline: none;
+  border-color: #63b3ed; /* Soft blue on focus, no glow */
+  box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.1); /* Very subtle outer shadow */
+}
+
+/* Buttons: Soft, inviting greens—easy to spot and click */
+button {
+  background: linear-gradient(135deg, #a8e6cf 0%, #88d8a3 100%); /* Gentle mint green gradient */
+  border: none;
+  color: #2d3748; /* Dark text on light bg */
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 25px; /* Rounded for friendliness */
+  cursor: pointer;
+  margin: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tiny subtle shadow */
+  transition: all 0.2s ease; /* Smooth hover */
+}
+
+button:hover {
+  background: linear-gradient(135deg, #88d8a3 0%, #a8e6cf 100%); /* Swap colors for subtle shift */
+  transform: translateY(-1px); /* Tiny lift, no zoom */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+}
+
+/* Lists: Soft cards like gentle notecards */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px; /* Center and limit width for focus */
+  margin: 0 auto;
+}
+
+li {
+  background: #ffffff; /* White cards */
+  margin: 15px 0;
+  padding: 20px; /* More space inside */
+  border-radius: 12px; /* Soft corners */
+  border-left: 4px solid #a8e6cf; /* Gentle green accent line */
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Very subtle shadow */
+  transition: box-shadow 0.2s ease;
+}
+
+li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /* Mild lift on hover */
+}
+
+/* Report Table: Clean, like a simple spreadsheet */
+.report-table {
+  width: 100%;
+  max-width: 800px; /* Not too wide */
+  border-collapse: collapse;
+  margin: 20px auto; /* Center it */
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.report-table th, .report-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0; /* Light gray lines */
+  color: #333333;
+  font-size: 1em; /* Readable */
+}
+
+.report-table th {
+  background: #f7fafc; /* Very light blue-gray */
+  color: #2d3748;
+  font-weight: 600;
+}
+
+/* Forms: Like a simple questionnaire */
+.form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 500px; /* Keep it compact */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Loading: Soft spinner text */
+.loading {
+  font-size: 1.5em;
+  color: #63b3ed; /* Calm blue */
+  margin: 50px 0;
+}
+
+/* Missed Alerts: Gentle warning, not scary red */
+.missed-alert {
+  color: #e53e3e; /* Soft red, but use sparingly */
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 20px 0;
+  background: #fed7d7; /* Light pink bg for visibility */
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #e53e3e;
+}
+
+/* Futuristic Card (if used elsewhere—keep subtle) */
+.futuristic-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.futuristic-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+/* Tip Animation: Gentle fade-in for motivational feel */
+.tip-animation {
+  animation: fadeInUp 0.5s ease-out;
+  background: #e6fffa;  /* Light teal bg */
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #a8e6cf;
+  margin: 10px 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Popup Overlay and Content (for ReminderPopup) */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);  /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+  border-left: 4px solid #a8e6cf;
+}
+
+.popup button {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+/* Additional styles for dashboard and login */
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.role-select {
+  padding: 12px;
+  border: 2px solid #cbd5e0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #333333;
+  font-size: 1em;
+  margin: 8px;
+  width: 250px;
+  font-family: inherit;
+}
+
+.schedule-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.note {
+  background: #e6fffa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #a8e6cf;
+  margin: 20px auto;
+  max-width: 600px;
+  font-style: italic;
+}
+
+.disabled-action {
+  color: #a0aec0;
+  font-style: italic;
+}
+
+/* Improved alignment for sections in AdminDashboard */
+section {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+section ul, section form {
+  text-align: left;
+}
+
+/* Ensure buttons in lists are right-aligned */
+li button {
+  float: right;
+  margin-left: 10px;
+}
+
+li::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  input, .role-select {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .schedule-list, .list {
+    max-width: 100%;
+  }
+
+  .report-table {
+    font-size: 0.9em;
+  }
+
+  .form {
+    max-width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Header alignment */
+header {
+  margin-bottom: 30px;
+}
+
+header p {
+  font-size: 1em;
+  margin: 10px 0;
+}
